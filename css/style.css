@@ -243,6 +243,10 @@ section{
 
 /* About Section */
 
+.about {
+   padding: 70px 0;
+}
+
 .skill-item p {
     margin: 0;
     padding: 0;
@@ -285,10 +289,39 @@ section{
 .portfolio {
     padding: 60px 0px;
 }
-.row .card {
-    border: 0;
+
+.portfolio h2 {
+   font-size: 3rem;
+   font-weight: bold;
+   text-transform: uppercase;
 }
 
+.row .card {
+    border: 0;
+    margin-top: 40px;
+}
+.row .card img {
+    transition: transform 0.75s ease-in-out;
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.card-body-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.row .card:hover img {
+    transform: scale(1.5,1.5);
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+}
 
 
 
