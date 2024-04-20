@@ -10,7 +10,20 @@
 }
 
  
-@media (min-width: 992px) { }
+@media (max-width: 992px) {
+  .card-body-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .card-body-title {
+     font-size: 12px;
+     text-align: start;
+  }
+  .card-body-title h5 {
+    font-size: 16px;
+  }
+ }
 
  
 @media (min-width: 1200px) { }
