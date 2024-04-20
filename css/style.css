@@ -1,0 +1,237 @@
+/* Header */
+
+.bg-myNav {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.navbar .container .navbar-brand {
+    color: white;
+    padding: 16px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.navbar .container .nav-list ul li a {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar .container .nav-list ul li a::before {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 20%;
+    bottom: 10px;
+    transition: width 1s;
+}
+
+.navbar .container .nav-list ul li a:hover::before {
+    width: 60%;
+}
+
+.navbar-toggler {
+   background-color: white;
+}
+
+
+
+
+.home {
+    background-image: url(../images/intro-bg.jpg);
+    background-size: cover;
+    background-position: 6px;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.home-layer {
+   background-color: rgba(0, 0, 0, 0.5);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.layer-content {
+    color: white;
+    text-align: center;
+}
+
+.home .home-layer .layer-content h1 {
+    font-size: 65px;
+}
+
+.home .home-layer .layer-content p {
+    font-size: 55px;
+}
+
+
+.typing {
+    font-size: 28px;
+}
+
+.typing::after {
+   content: "";
+   animation-name: typing;
+   animation-duration: 6s;
+   animation-iteration-count: infinite ;
+}
+
+@keyframes typing {
+    0% {
+        content: " |";
+    }
+
+    2% {
+        content: " D|";
+    }
+    4% {
+        content: " De|";
+    }
+    6% {
+        content: " Dev|";
+    }
+    8% {
+        content: " Deve|";
+    }
+    10% {
+        content: " Devel|";
+    }
+    12% {
+        content: " Develo|";
+    }
+    14% {
+        content: " Develop|";
+    }
+    16% {
+        content: " Develope|";
+    }
+    18% {
+        content: " Developer|";
+    }
+    20% {
+        content: " Developer |";
+    }
+    30% {
+        content: " Developer |";
+    }
+    32% {
+        content: " Develope|";
+    }
+    34% {
+        content: " Develop|";
+    }
+    36% {
+        content: " Develo|";
+    }
+    37% {
+        content: " Devel|";
+    }
+    38% {
+        content: " Deve|";
+    }
+    40% {
+        content: " Dev|";
+    }
+    42% {
+        content: " De|";
+    }
+    44% {
+        content: " D|";
+    }
+    46% {
+        content: " |";
+    }
+    48% {
+        content: " |";
+    }
+
+    50% {
+        content: " F|";
+    }
+    52% {
+        content: " Fr|";
+    }
+    54% {
+        content: " Fre|";
+    }
+    56% {
+        content: " Free|";
+    }
+    58% {
+        content: " Freel|";
+    }
+    60% {
+        content: " Freela|";
+    }
+    62% {
+        content: " Freelan|";
+    }
+    64% {
+        content: " Freelanc|";
+    }
+    66% {
+        content: " Freelance|";
+    }
+    68% {
+        content: " Freelancer|";
+    }
+    70% {
+        content: " Freelancer |";
+    }
+    80% {
+        content: " Freelancer |";
+    }
+    82% {
+        content: " Freelance|";
+    }
+    84% {
+        content: " Freelanc|";
+    }
+    86% {
+        content: " Freelan|";
+    }
+    88% {
+        content: " Freela|";
+    }
+    90% {
+        content: " Freel|";
+    }
+    92% {
+        content: " Free|";
+    }
+    94% {
+        content: " Fre|";
+    }
+    96% {
+        content: " Fr| ";
+    }
+    98% {
+        content: " F|";
+    }
+    100% {
+        content: " |";
+    }
+
+}
+
+
+
+
+
