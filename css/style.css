@@ -377,6 +377,31 @@ section{
     height: 5px;
 }
 
+/* Testmonial Section */
+
+.testmonial {
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.testmonial-layer {
+    background-color: rgba(0 ,120 ,255, 0.5);
+    padding: 120px;
+
+}
+
+
+.carousel-indicators {
+   top: 100%;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
 
 
 
