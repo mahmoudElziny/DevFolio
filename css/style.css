@@ -19,6 +19,7 @@ section{
 }
 
 
+
 .navbar .container .navbar-brand {
     color: white;
     padding: 16px;
@@ -28,7 +29,6 @@ section{
 
 .navbar .container .nav-item {
     white-space: nowrap;
-    white-space-collapse: collapse;
     text-wrap: nowrap;
     padding: 8px 0 8px 12px;
     position: relative;
@@ -229,7 +229,7 @@ section{
     }
 
 }
-
+*/
 /* About Section */
 
 .about {
@@ -485,5 +485,6 @@ section{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 
 
