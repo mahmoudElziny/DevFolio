@@ -26,35 +26,24 @@ section{
     font-weight: 500;
 }
 
-
-.navbar .container .nav-list ul li a {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    font-weight: 500;
+.navbar .container .nav-item {
+    white-space: nowrap;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    padding: 8px 0 8px 12px;
     position: relative;
 }
 
-.navbar .container .nav-list ul li a::before {
-    content: " ";
-    width: 0%;
-    height: 2px;
+.navbar .container .nav-item .nav-link {
+   font-size: 16px;
+   font-weight: 600;
+   letter-spacing: 0.4px;
+   text-transform: uppercase;
+}
+
+.dropdown-menu {
     background-color: white;
-    position: absolute;
-    left: 20%;
-    bottom: 10px;
-    transition: width 1s;
 }
-
-.navbar .container .nav-list ul li a:hover::before {
-    width: 60%;
-}
-
-.mobile-nav-toggle  {
-  color: white;
-  cursor: pointer;
-}
-
 
 
 
@@ -468,6 +457,7 @@ section{
     background-image: url(../images/overlay-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-layer {
@@ -478,5 +468,22 @@ section{
 
 /* Footer Section */
 
+.footer {
+    background-color: #0062d3;
+}
+
+.footer .icon {
+    bottom: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+}
+
+.footer .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 

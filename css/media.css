@@ -30,7 +30,26 @@
   }
  }
 
- 
+ @media (min-width: 992px) {
+  .navbar .container .nav-item .nav-link::before {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    transition: width 1s;
+}
+
+.navbar .container .nav-item .nav-link:hover::before {
+    width: 60%;
+}
+
+ }
+
+
+
 @media (min-width: 1200px) { }
 
  

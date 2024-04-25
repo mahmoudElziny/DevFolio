@@ -13,7 +13,7 @@
 </head>
 <body>
   <!-- Home Section -->
-    <header class="home">
+    <header class="home" id="home">
         <nav class="navbar navbar-expand-lg bg-myNav">
             <div class="container">
               <a class="navbar-brand" href="#">DevFolio</a>
@@ -22,40 +22,42 @@
               </button>
 
 
-              <div class="collapse navbar-collapse nav-list" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">SERVICES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">WORK</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu bg-white">
-                      <li><a class="dropdown-item text-black" href="#">Action</a></li>
-                      <li><a class="dropdown-item text-black" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider text-black"></li>
-                      <li><a class="dropdown-item text-black" href="#">Something else here</a></li>
+              <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="#home">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">ABOUT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#services">SERVICES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="#work">WORK</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="#blog">BLOG</a>
+                      </li>
+                      <li class="nav-item dropdown text-white">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          DROPDOWN
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item text-black" href="#">Action</a></li>
+                          <li><a class="dropdown-item text-black" href="#">Another action</a></li>
+                          <li><a class="dropdown-item text-black" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="#contact">CONTACT</a>
+                      </li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
-                  </li>
-                </ul>
-              
-              </div>
+                  </div>
+                </div>
+              </nav>
             </div>
           </nav>
 
@@ -68,7 +70,7 @@
     </header>
 
     <!-- About Section -->
-    <section class="about section">
+    <section class="about section" id="about">
       <div class="container p-5 bg-body shadow">
         <div class="row">
           <div class="col-md-6">
@@ -122,7 +124,7 @@
     </section>
 
      <!-- Services Section -->
-    <section class="services py-5  text-center">
+    <section class="services py-5  text-center" id="services">
       <h2 class="py-2">Services</h2>
       <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       <div class="line bg-primary m-auto"></div>
@@ -226,7 +228,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio py-5  text-center">
+    <section class="portfolio py-5  text-center" id="work">
       <h2 class="py-2">PORTFOLIO</h2>
       <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       <div class="line bg-primary m-auto"></div>
@@ -378,7 +380,7 @@
       </div>
     </section>
 
-    <section class="blog py-5 text-center">
+    <section class="blog py-5 text-center" id="blog">
       <h2 class="py-2">Blog</h2>
       <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       <div class="line bg-primary m-auto"></div>
@@ -461,7 +463,7 @@
     </section>
 
     <!-- Contact Section-->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact-layer">
         <div class="container bg-white p-5">
           <div class="row">
@@ -505,7 +507,15 @@
     </section>
 
     <!-- Footer Section -->
-    <section class="footer"></section>
+    <section class="footer shadow-lg">
+       <div class="footer-content text-center p-3"> 
+        <p class="my-0 text-white">© Copyright <span class="fw-bold">DevFolio</span>. All Rights Reserved</p>
+        <p class="text-white">Designed by Mahmoud Elzeny</p>
+      </div>
+      <div class="icon position-fixed rounded-circle bg-primary">
+        <i class="fa-solid fa-arrow-up text-white fs-5"></i>
+      </div>
+    </section>
 
  <script src="js/bootstrap.min.js"></script>
  <script src="js/popper.min.js"></script>
