@@ -388,7 +388,6 @@ section{
 .testmonial-layer {
     background-color: rgba(0 ,120 ,255, 0.5);
     padding: 120px;
-
 }
 
 
@@ -424,7 +423,7 @@ section{
     overflow: hidden;
 }
 
-.card {
+.card .img2-custom {
     position: relative;
 }
 
@@ -445,9 +444,10 @@ section{
 .centered-div {
     background-color:  #0078ff;
     position: absolute;
-    top: 49%;
-    right: 50%;
-    transform: translate(49%,50%);
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    
 
 }
 
@@ -461,6 +461,22 @@ section{
     padding-block: 1px;
 }
 
+
+/* Contact Section */
+
+.contact {
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact-layer {
+    background-color: rgba(0 ,120 ,255, 0.5);
+    padding: 120px;
+}
+
+
+/* Footer Section */
 
 
 

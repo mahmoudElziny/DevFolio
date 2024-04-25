@@ -7,6 +7,10 @@
     .about .container .row div div div p {
         margin-top: 15px;
     }
+
+    .contact-layer .col-md-6 {
+      margin-bottom: 30px;
+    }
    
 }
 
