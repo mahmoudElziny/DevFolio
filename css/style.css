@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+section{
+    background-color: #f5f5f5;
+}
+
+
 /* Header */
 
 .bg-myNav {
@@ -10,6 +19,7 @@
 }
 
 
+
 .navbar .container .navbar-brand {
     color: white;
     padding: 16px;
@@ -17,34 +27,23 @@
     font-weight: 500;
 }
 
-
-.navbar .container .nav-list ul li a {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    font-weight: 500;
+.navbar .container .nav-item {
+    white-space: nowrap;
+    text-wrap: nowrap;
+    padding: 8px 0 8px 12px;
     position: relative;
 }
 
-.navbar .container .nav-list ul li a::before {
-    content: " ";
-    width: 0%;
-    height: 2px;
+.navbar .container .nav-item .nav-link {
+   font-size: 16px;
+   font-weight: 600;
+   letter-spacing: 0.4px;
+   text-transform: uppercase;
+}
+
+.dropdown-menu {
     background-color: white;
-    position: absolute;
-    left: 20%;
-    bottom: 10px;
-    transition: width 1s;
 }
-
-.navbar .container .nav-list ul li a:hover::before {
-    width: 60%;
-}
-
-.navbar-toggler {
-   background-color: white;
-}
-
 
 
 
@@ -230,8 +229,262 @@
     }
 
 }
+*/
+/* About Section */
+
+.about {
+   padding: 70px 0;
+}
+
+.skill-item p {
+    margin: 0;
+    padding: 0;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #4e4e4e;
+}
+
+.title-left {
+    font-size: 2rem;
+    position: relative;
+}
+
+.title-left::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+    left: 0px;
+    bottom: 0px;
+}
+
+.about .container .row div div div p {
+    margin-top: 0;
+}
+
+.container .row div .row div p  {
+    color: #4e4e4e;
+}
+.container .row div .row div p span {
+    color: black;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0px;
+}
+
+.services h2 {
+   font-size: 3rem;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.services .container .row div div p {
+    color: #4e4e4e;
+}
+.card-icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0078ff; 
+    background-color: white;  
+    color: black; 
+    transition: all 500ms ease;
+}
+
+.card-icon:hover {
+    background-color: #0078ff;  
+    box-shadow: 0 0 0 10px #cde1f8;
+    color: white;
+}
+
+/* Work Section */
+.work {
+    background-image: url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 6px;
+}
+
+.work-layer {
+    background-color: #0078ff;
+    opacity: 0.7;
+}
+
+.work-item {
+    background-color: transparent;
+}
+
+.work-item i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+/* Portfolio Section */
+
+.portfolio {
+    padding: 60px 0px;
+}
+
+.portfolio h2 {
+   font-size: 3rem;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.row .card {
+    border: 0;
+    margin-top: 40px;
+}
+.row .card img {
+    transition: transform 0.75s ease-in-out;
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.card-body-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.row .card:hover .img-portfolio {
+    transform: scale(1.5,1.5);
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+}
+
+/* Testmonial Section */
+
+.testmonial {
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.testmonial-layer {
+    background-color: rgba(0 ,120 ,255, 0.5);
+    padding: 120px;
+}
 
 
+.carousel-indicators {
+   top: 100%;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+
+
+/* Blog Section */
+
+.blog {
+    padding: 60px 0px;
+}
+
+.blog h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+ }
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    overflow: hidden;
+}
+
+.card .img2-custom {
+    position: relative;
+}
+
+.post-author a {
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.post-author a:hover {
+    color: #0078ff;
+}
+
+.post-date span {
+    color: #1e1e1e;
+}
+
+.centered-div {
+    background-color:  #0078ff;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+}
+
+.centered-div h6 {
+    margin-top: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1px;
+    padding-inline: 10px;
+    padding-block: 1px;
+}
+
+
+/* Contact Section */
+
+.contact {
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-layer {
+    background-color: rgba(0 ,120 ,255, 0.5);
+    padding: 120px;
+}
+
+
+/* Footer Section */
+
+.footer {
+    background-color: #0062d3;
+}
+
+.footer .icon {
+    bottom: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+}
+
+.footer .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 
 

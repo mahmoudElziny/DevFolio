@@ -1,0 +1,61 @@
+@media (min-width: 576px) {
+    
+  }
+
+
+@media (max-width: 768px) { 
+    .about .container .row div div div p {
+        margin-top: 15px;
+    }
+
+    .contact-layer .col-md-6 {
+      margin-bottom: 30px;
+    }
+   
+}
+
+ 
+@media (max-width: 992px) {
+ 
+
+ 
+  .card-body-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .card-body-title {
+     font-size: 12px;
+     text-align: start;
+  }
+  .card-body-title h5 {
+    font-size: 16px;
+  }
+ }
+
+ @media (min-width: 992px) {
+
+/*
+  .navbar .container .nav-item .nav-link::before {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    transition: width 1s;
+}
+
+.navbar .container .nav-item .nav-link:hover::before {
+    width: 60%;
+}*/
+
+ }
+
+
+
+@media (min-width: 1200px) { }
+
+ 
+@media (min-width: 1400px) { }
